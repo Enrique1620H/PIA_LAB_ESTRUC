@@ -250,7 +250,7 @@ static void ver_promedios(void) {
             printf("%d) %s: sin calificaciones\n", i + 1, materias[i].nombre);
         else
             printf("%d) %s: promedio %.1f | acumulado %.2f pts\n",
-                   i + 1, materias[i].nombre, p, calcular_acumulado(&materias[i]));
+                i + 1, materias[i].nombre, p, calcular_acumulado(&materias[i]));
     }
     float g = promedio_general();
     if (g >= 0)
@@ -323,7 +323,7 @@ void menu_materias(void){
         printf("1. Agregar materia\n");
         printf("2. Ver materias\n");
         printf("3. Capturar calificacion de un parcial\n");
-        printf("4. Que necesito en el parcial?\n");
+        printf("4. ¿Qué necesito en el examen final?\n");
         printf("5. Ver promedios\n");
         printf("0. Volver\n");
         op = leer_int("Opcion: ", 0, 5);
@@ -340,4 +340,4 @@ void menu_materias(void){
     } while (op != 0);
     
 }
-//El menu esta compuesto por casos, agregando materias y donde i debia de elergirlas para espues usar el if como filtro para capturar las calificaciones y/o su calculo necesario, regresando el op igual a 0
+//El menu esta compuesto por casos, agregando materias y donde i debia de elergirlas para espues usar el if como filtro para capturar las calificaciones y/o su calculo necesario, regresando el op igual a 0

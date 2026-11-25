@@ -183,7 +183,7 @@ void Cambiar_Contra(char nombre_actual[], char contra_actual[]) {// Cambiando el
     int validando;
     char preguntando;
     do { //Ciclo para preguntar si es que esta segur@
-        printf("¿Desa cambiar la contraseña actual? Ingresa \033[1mY\033[0m o \033[1mN\033[0m\n");
+        printf("¿Desea cambiar la contraseña actual? Ingresa \033[1mY\033[0m o \033[1mN\033[0m\n");
         scanf(" %c", &preguntando);
         if (preguntando == 'y') preguntando = 'Y';
         if (preguntando == 'n') preguntando = 'N';
@@ -347,7 +347,7 @@ int main() {//AQUI ESTA EL MAIN-################################################
     char nombre[50];
     char contrasena[50];
     char reintento;
-    int intento=2, EntrandoAlMenu=1;
+    int intento=6 , EntrandoAlMenu=1;
     time_t inicio_sesion;
     char fecha_hora_inicio[30];
 
